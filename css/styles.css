@@ -10,10 +10,12 @@
     --color-grey-p: #757575;
     --color-grey-button: #F5F4FA;
     --color-grey-border: #ECECEC;
+    --color-grey-border-clients: #AFB1B8;
 
     --color-white-text: #FFFFFF;
     --color-white-background: #EEEEEE;
     --color-white-background2: #F5F5F5;
+
 
 }
 
@@ -62,6 +64,17 @@ img {
 
 .section {
     padding: 94px 0px;
+}
+
+.section-title {
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--color-black-h);
 }
 
 /*----------container-----------*/
@@ -250,7 +263,7 @@ $$$$$$$$$$$$$$$$
     width: 270px;
 }
 
-.features-header {
+.features-title {
     margin-bottom: 10px;
 
     font-weight: 700;
@@ -278,15 +291,7 @@ $$$$$$$$$$$$$$$$
     padding-top: 0;
 }
 
-.about-us-header {
-    margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--color-black-h);
-}
+.about-us-title {}
 
 .about-us-list {
     display: flex;
@@ -303,16 +308,7 @@ $$$$$$$$$$$$$$$$
     background-color: #F5F4FA;
 }
 
-.our-team-header {
-    margin-bottom: 50px;
-
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--color-black-h);
-}
+.our-team-title {}
 
 .out-team-list {
     display: flex;
@@ -350,14 +346,26 @@ $$$$$$$$$$$$$$$$
 /*++++++++++our-team++++++++++*/
 
 /*++++++++++our-team++++++++++*/
-.clients-header margin-bottom: 50px;
+.clients-title {}
 
-font-weight: 700;
-font-size: 36px;
-line-height: 1.16;
-text-align: center;
-letter-spacing: 0.03em;
-color: var(--color-black-h);
+.clients-list {
+    display: flex;
+    gap: 30px;
+}
+
+.clients-link {
+    border: 1px solid var(--color-grey-border-clients);
+    border-radius: 4px;
+
+}
+
+.clients-item {}
+
+.clients-link:hover,
+clients-link:focus {
+    border-color: var(--color-blue-letters);
+    color: var(--color-blue-letters);
+}
 
 /*++++++++++our-team++++++++++*/
 
