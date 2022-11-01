@@ -67,6 +67,17 @@ img {
 /*----------container-----------*/
 
 /*
+$$$$$$$$$$$$$$$$
+                 icons
+$$$$$$$$$$$$$$$$
+*/
+
+.envelope-item {}
+
+.smartphone-item {}
+
+
+/*
 ################
                main page 
 ################
@@ -338,6 +349,17 @@ img {
 
 /*++++++++++our-team++++++++++*/
 
+/*++++++++++our-team++++++++++*/
+.clients-header margin-bottom: 50px;
+
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--color-black-h);
+
+/*++++++++++our-team++++++++++*/
 
 /*++++++++++footer++++++++++*/
 
