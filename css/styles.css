@@ -465,18 +465,15 @@ $$$$$$$$$$$$$$$$
 
 /*hw-04*/
 .footer-flex {
-    dislpay: flex;
-    /*not working*/
-    align-items: center;
-    /*not working*/
-    border: 1px solid blue;
+    display: flex;
+    align-items: baseline;
+    gap: 70px;
 }
-
 
 /*hw-04*/
 
 .footer-contacts {
-    border: 1px solid green;
+    width: auto;
 }
 
 .footer-address {
@@ -530,8 +527,7 @@ $$$$$$$$$$$$$$$$
 
 /*footer-social*/
 .footer-social {
-    margin-left: 70px;
-    border: 1px solid orange;
+    width: auto;
 }
 
 .footer-social-title {
