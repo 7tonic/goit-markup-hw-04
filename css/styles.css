@@ -1,6 +1,6 @@
 :root {
 
-    --color-blue-letters: #2196F3;
+    --color-light-blue: #2196F3;
 
     --color-blue-section: #2F303A;
 
@@ -88,13 +88,14 @@ $$$$$$$$$$$$$$$$
 $$$$$$$$$$$$$$$$
 */
 
-.envelope-item {
+.envelope-icon {
     margin-right: 10px;
 }
 
-.smartphone-item {
+.smartphone-icon {
     margin-right: 10px;
 }
+
 
 
 /*
@@ -118,7 +119,7 @@ $$$$$$$$$$$$$$$$
 }
 
 .header-logo-web {
-    color: var(--color-blue-letters);
+    color: var(--color-light-blue);
 }
 
 .header-logo-studio {
@@ -127,7 +128,6 @@ $$$$$$$$$$$$$$$$
 
 /*----------logo-design-----------*/
 
-/*----------header-flex-----------*/
 .header-flex {
     display: flex;
     align-items: center;
@@ -149,75 +149,57 @@ $$$$$$$$$$$$$$$$
     gap: 50px;
 }
 
-/*----------header-flex-----------*/
+.nav-list .current {
+    color: var(--color-light-blue);
+}
 
-/*----------header-style-----------*/
 .nav-link,
 .address-link {
-    display: block;
+    display: flex;
+    align-items: center;
+
     padding: 32px 0;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 
-    color: var(--color-black-h);
-}
-
-.address-link {
     color: var(--color-grey-p);
 }
 
-/*----------header-style-----------*/
-
-/* --- first version long---*/
-/*.nav-link:hover,
-.nav-link:focus,
-.address-link:hover, 
-.address-link:focus,
-.footer-link:hover,
-.footer-link:focus*/
-/* --- first version long---*/
-
-/*----------header-interactive-----------*/
-.link:hover,
-.link:focus {
-    color: var(--color-blue-letters);
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--color-light-blue);
 }
 
-.nav-list .current {
-    color: var(--color-blue-letters);
+.address-link:hover,
+.address-link:focus {
+    color: var(--color-light-blue);
 }
 
-/*----------header-interactive-----------*/
+.envelope-icon,
+.smartphone-icon {
+    fill: currentColor;
+}
 
 /*++++++++++header++++++++++*/
+
 
 /*++++++++++hero++++++++++*/
 
 .hero {
-    /* hw-04*/
     background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/index-hero/hero-bg.jpg);
     max-width: 1600px;
     background-color: #C4C4C4;
     background-repeat: no-repeat;
 
-    /*hw-04*/
-
-    /*hw-03*/
     padding: 200px 0;
     margin-left: auto;
     margin-right: auto;
-    /*background-color: var(--color-blue-section);*/
-    /*hw-04*/
 
     text-align: center;
     /*to center a button. Button is inline-block, and can be aligned by  */
-    /*hw-03*/
 }
-
-
-
 
 .hero-title {
     width: 696px;
@@ -246,46 +228,52 @@ $$$$$$$$$$$$$$$$
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.87;
+    line-height: 1.88;
     letter-spacing: 0.06em;
-
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
     cursor: pointer;
 
     color: var(--color-white-text);
-    background-color: var(--color-blue-letters);
+    background-color: var(--color-light-blue);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
 }
 
 .hero-button:hover,
 .hero-button:focus {
-    background-color: #2195f3c4;
+    background-color: #188CE8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid #000000;
     border-radius: 4px;
+    -webkit-text-stroke: 1px #000;
 }
 
 /*++++++++++hero++++++++++*/
 
 /*++++++++++features++++++++++*/
-/*hw 04*/
 .features-list {
     display: flex;
     gap: 30px;
-
 }
 
 .features-container {
     display: flex;
     width: 270px;
     height: 120px;
+
     background-color: var(--color-background-features);
+    border-radius: 4px;
+
     margin-bottom: 30px;
     justify-content: center;
     align-items: center;
 }
 
-/*hw04*/
+.features-container:hover,
+.features-container:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 
 .features-item {
     width: 270px;
@@ -308,7 +296,6 @@ $$$$$$$$$$$$$$$$
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--color-grey-p);
-
 }
 
 /*++++++++++features++++++++++*/
@@ -352,7 +339,6 @@ $$$$$$$$$$$$$$$$
 
 .team-wrapper {
     padding: 30px 0;
-
 }
 
 .our-team-name {
@@ -372,15 +358,11 @@ $$$$$$$$$$$$$$$$
     margin-bottom: 16px;
 }
 
-/*hw 04*/
-
 .social-list {
     display: flex;
     gap: 10px;
     justify-content: center;
     align-items: center;
-
-
 }
 
 .social-item {}
@@ -392,40 +374,29 @@ $$$$$$$$$$$$$$$$
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    fill: var(--color-grey-social-icon);
+    color: var(--color-grey-social-icon);
     background-color: var(--color-white-text);
-
-
-}
-
-.social-icon {
-    height: 20px;
-    width: 20px;
-
 }
 
 .social-link:hover,
 .social-link:focus {
-    background-color: var(--color-blue-letters);
-    fill: var(--color-white-text);
+    background-color: var(--color-light-blue);
+    color: var(--color-white-text);
 }
 
-.social-link:hover,
-.social-link:focus {}
-
-/*hw 04*/
-
-/*++++++++++our-team++++++++++*/
+.social-icon {
+    fill: currentColor;
+}
 
 /*++++++++++our-team++++++++++*/
-.clients-title {}
 
+/*++++++++++our-team++++++++++*/
 .clients-list {
     display: flex;
     gap: 30px;
 }
 
-.clients-item {
+.clients-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -433,23 +404,17 @@ $$$$$$$$$$$$$$$$
     border-radius: 4px;
     height: 92px;
     width: 170px;
+    color: var(--color-grey-border-clients);
 }
 
-.clients-link {}
+.clients-link:hover,
+.clients-link:focus {
+    border-color: var(--color-light-blue);
+    color: var(--color-light-blue);
+}
 
 .clients-icon {
-    fill: var(--color-grey-social-icon);
-}
-
-.clients-item:hover,
-.clients-item:focus {
-    border-color: var(--color-blue-letters);
-    color: var(--color-blue-letters);
-}
-
-.clients-icon:hover,
-.clients-icon:focus {
-    fill: var(--color-blue-letters);
+    fill: currentColor;
 }
 
 /*++++++++++our-team++++++++++*/
@@ -459,18 +424,13 @@ $$$$$$$$$$$$$$$$
 .footer {
     background-color: var(--color-blue-section);
     padding: 60px 0;
-    display: flex;
-
 }
 
-/*hw-04*/
 .footer-flex {
     display: flex;
     align-items: baseline;
     gap: 70px;
 }
-
-/*hw-04*/
 
 .footer-contacts {
     width: auto;
@@ -490,7 +450,7 @@ $$$$$$$$$$$$$$$$
 }
 
 .footer-logo-web {
-    color: var(--color-blue-letters);
+    color: var(--color-light-blue);
 }
 
 .footer-logo-studio {
@@ -508,11 +468,6 @@ $$$$$$$$$$$$$$$$
     color: var(--color-white-text);
 }
 
-/*.footer-item:first-child {
-    margin-bottom: 9px;}
-    Gives margin-bottom only to 1st element. 
-    If more "a" are added  - they won't have margin*/
-
 .footer-item:not(:last-child) {
     margin-bottom: 9px;
 }
@@ -522,7 +477,6 @@ $$$$$$$$$$$$$$$$
     line-height: 24px;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-
 }
 
 /*footer-social*/
@@ -557,24 +511,18 @@ $$$$$$$$$$$$$$$$
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    fill: var(--color-white-text);
+    color: var(--color-white-text);
     background-color: rgba(255, 255, 255, 0.1);
-
-
-}
-
-.footer-social-icon {
-    height: 20px;
-    width: 20px;
-
 }
 
 .footer-social-link:hover,
 .footer-social-link:focus {
-    background-color: var(--color-blue-letters);
-
+    background-color: var(--color-light-blue);
 }
 
+.footer-social-icon {
+    fill: currentColor;
+}
 
 /*footer-sociao*/
 
@@ -584,14 +532,6 @@ $$$$$$$$$$$$$$$$
 
 /*++++++++++portfolio-cards++++++++++*/
 
-
-.portfolio-item:hover,
-.portfolio-item:focus {
-    box-shadow:
-        0px 1px 1px rgba(0, 0, 0, 0.12),
-        0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
-}
 
 .portfolio-wrapper {
     padding: 20px 24px;
@@ -622,7 +562,6 @@ $$$$$$$$$$$$$$$$
 /*++++++++++portfolio-cards++++++++++*/
 
 /*++++++++++button++++++++++*/
-
 .portfolio-button {
     padding: 6px 22px;
     font-family: inherit;
@@ -634,9 +573,17 @@ $$$$$$$$$$$$$$$$
     border: none;
 }
 
+.portfolio-item:hover,
+.portfolio-item:focus {
+    box-shadow:
+        0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .portfolio-button:hover,
 .portfolio-button:focus {
-    background-color: var(--color-blue-letters);
+    background-color: var(--color-light-blue);
     color: var(--color-white-text);
     cursor: pointer;
     box-shadow:
@@ -644,6 +591,7 @@ $$$$$$$$$$$$$$$$
         0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+
 
 /*++++++++++button++++++++++*/
 
